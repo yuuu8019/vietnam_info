@@ -1,0 +1,341 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  
+
+}
+ 
+#wrap {
+  width: auto;
+  margin: 0px;
+
+}
+ 
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 30px 7vw;
+  box-sizing: border-box;
+  background-color: #9595959e;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__title {
+  font-size: 25px;
+  color: #ffffff;
+
+}
+.header__nav ul {
+  display: flex;
+  
+}
+.header__nav ul li {
+  margin-left: 50px;
+  
+}
+.header__nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+/* first-v */
+.first-v {
+  background-image: url(images/IMG_4797.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+}
+/* レスポンシブ */
+@media (max-width: 600px) {
+  .header__nav {
+      display: none;
+  }
+}
+
+ 
+nav {
+  padding: 0px 0px;
+width: auto;
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+ 
+main {
+  padding: 100px;
+  height : 2500px;
+  width: auto;
+  background-color: white;
+display: block;
+}
+ 
+footer {
+  padding: 40px;
+  height: 60px;
+  background-color : black;
+  color: white;
+}
+
+
+
+
+  /* 横並び */
+
+.flex {
+  display: flex; /*横並び*/
+  margin: 80px 10px 10px 10px;;;
+  text-align: right;
+}
+.flex .image {
+  width: 800px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.flex .right {
+  margin: 0 0 0 50px;
+  padding: 0;
+}
+
+.flex .text {
+  margin: 10px 30px 30px;
+  padding: 50px;
+  text-align: right;
+  width: 700px;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.flex2 {
+  display: flex; /*横並び*/
+  margin: 100px 10px 10px 10px;;;
+  text-align: left;
+}
+.flex2 .image2 {
+  width: 500px; /*画像サイズ指定*/
+  height: 500px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  margin-right: auto;
+}
+.flex2 .right2 {
+  margin: 0 0 50 0px;
+  padding: 0;
+}
+
+.flex2 .text2 {
+  margin: 10px 30px 30px;
+  padding: 50px;
+  text-align: left;
+  width: 700px;
+}
+
+.heading03 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	text-align: center;
+}
+
+.heading03::before,
+.heading03::after {
+	content: '';
+	width: 70px;
+	height: 3px;
+	background-color: #ffd500;
+}
+
+.heading03::before {
+	margin-right: 20px;
+}
+.heading03::after {
+	margin-left: 20px;
+}
+
+justify-content:flex-end.list-menu{
+  margin-bottom: 50px;
+}
+
+
+.logo{
+float: left;
+  margin:50px 0 0 30px;
+  float:left;;
+}
+
+.logo img{
+  width:60px;
+}
+
+
+
+
+
+
+
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+  width:94%;
+   margin:0 auto;
+}
+
+.slider img {
+   width:100%;/*スライダー内の画像を横幅100%に*/
+   height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+   margin:0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+   position: absolute;/*絶対配置にする*/
+   top: 42%;
+   cursor: pointer;/*マウスカーソルを指マークに*/
+   outline: none;/*クリックをしたら出てくる枠線を消す*/
+   border-top: 2px solid #ffffff;/*矢印の色*/
+   border-right: 2px solid #ffffff;/*矢印の色*/
+   height: 15px;
+   width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+   left: -1.5%;
+   transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+   right: -1.5%;
+   transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+   text-align:center;
+ margin:20px 0 0 0;
+}
+
+.slick-dots li {
+   display:inline-block;
+ margin:0 5px;
+}
+
+.slick-dots button {
+   color: transparent;
+   outline: none;
+   width:8px;/*ドットボタンのサイズ*/
+   height:8px;/*ドットボタンのサイズ*/
+   display:block;
+   border-radius:50%;
+   background:#ccc;/*ドットボタンの色*/
+}
+
+
+
+
+
+/* ボタンのスタイル */
+.buttonIconText02 {
+  display: flex;
+  margin-left: 250px;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  max-width: 240px;
+  height: 40px;
+  padding: 8px 64px 8px 8px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: #6fa24a;
+  border-radius: 32px; /* (buttonの高さ / 2) の値 */
+}
+
+.buttonIconText03 {
+  display: flex;
+  margin-left: 500px;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  max-width: 240px;
+  height: 40px;
+  padding: 8px 64px 8px 8px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: #6fa24a;
+  border-radius: 32px; /* (buttonの高さ / 2) の値 */
+}
+
+
+.buttonIconText02__reverse {
+  flex-direction: row-reverse;
+  padding: 8px 8px 8px 64px;
+}
+
+.buttonIconText02_icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.buttonIconText02_text {
+  flex-shrink: 1;
+  width: 100%;
+}
+
+@media (any-hover: hover) {
+  .buttonIconText02 {
+    transition: background-color 0.2s;
+  }
+
+  .buttonIconText02_icon {
+    transition: transform 0.2s;
+  }
+
+  .buttonIconText02:hover {
+    background-color: #54802f;
+  }
+
+  .buttonIconText02:hover .buttonIconText02_icon {
+    transform: translateX(4px);
+  }
+
+  .buttonIconText02:hover .buttonIconText02_icon__left {
+    transform: translateX(-4px);
+  }
+}
+
+/* 左矢印アイコンのスタイル */
+.iconArrowLeft {
+  rotate: 180deg;
+}
+
+

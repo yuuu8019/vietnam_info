@@ -340,7 +340,7 @@ justify-content:flex-end.list-menu{
   font-size: 1.5em;
   position: absolute;
   border-radius: 20px;
-  top: 3000px;
+  top: 2800px;
   right: 400px;
 }
 
@@ -352,7 +352,7 @@ justify-content:flex-end.list-menu{
   font-size: 1.5em;
   position: absolute;
   border-radius: 20px;
-  top: 3500px;
+  top: 3300px;
   left: 420px;
 }
 
@@ -364,7 +364,7 @@ justify-content:flex-end.list-menu{
   font-size: 1.5em;
   position: absolute;
   border-radius: 20px;
-  top: 3600px;
+  top: 3500px;
   right: 380px;
 }
 
